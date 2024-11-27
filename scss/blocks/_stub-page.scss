@@ -1,0 +1,85 @@
+.stub-page {
+    &__wrap {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-top: 117px;
+        text-align: center;
+        height: 660px;
+
+        background-image: url(../../images/404bg.svg);
+        background-position: bottom left;
+        background-repeat: no-repeat;
+        background-size: 430px 430px;
+
+        @include vp-1023 {
+            padding-top: 129px;
+            background-size: 330px 330px;
+        }
+
+        @include vp-767 {
+            height: 584px;
+            padding-top: 80px;
+            background-size: 290px 290px;
+            background-position: bottom;
+        }
+    }
+
+    &__title {
+        margin: 0 0 20px 0;
+        font-size: 36px;
+        font-weight: 700;
+        line-height: 40px;
+        letter-spacing: -0.02em;
+        color: $color-deep-lilac;
+
+        @include vp-1023 {
+            font-size: 32px;
+            line-height: 36px;
+        }
+
+        @include vp-767 {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+            line-height: 24px;
+        }
+
+        span {
+            display: block;
+            margin: 0 0 20px 0;
+            font-size: 140px;
+            font-weight: 600;
+            line-height: 120px;
+            letter-spacing: -0.05em;
+
+            @include vp-1023 {
+                font-size: 120px;
+                line-height: 100px;
+            }
+
+            @include vp-767 {
+                margin: 0 0 10px 0;
+                font-size: 80px;
+                line-height: 70px;
+            }
+        }
+    }
+
+    &__text {
+        max-width: 420px;
+        margin: 0 0 40px 0;
+        font-size: 16px;
+        font-weight: 400;
+        line-height: 20px;
+
+        @include vp-1023 {
+            margin: 0 0 41px 0;
+        }
+
+        @include vp-767 {
+            margin: 0 0 21px 0;
+            font-size: 13px;
+            line-height: 16px;
+        }
+    }
+}
