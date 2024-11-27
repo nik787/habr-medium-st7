@@ -1413,7 +1413,7 @@ a {
   align-items: center;
   padding-top: 117px;
   text-align: center;
-  height: 660px;
+  height: calc(100vh - 80px);
   background-image: url(../../images/404bg.svg);
   background-position: bottom left;
   background-repeat: no-repeat;
@@ -1427,7 +1427,7 @@ a {
 }
 @media (max-width: 767px) {
   .stub-page__wrap {
-    height: 584px;
+    height: calc(100vh - 56px);
     padding-top: 80px;
     background-size: 290px 290px;
     background-position: bottom;
